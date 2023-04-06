@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\form1.css">
+    <title>Kabalangay | Sign up</title>
+    <!-- <script>
+        // Get the current page path
+        const currentPath = window.location.pathname;
+
+        // Check if the user is trying to access the login or sign-up page directly
+        if ((currentPath.endsWith('/login.html') || currentPath.endsWith('/signup1.html')) && (document.referrer.indexOf('/index.html') === -1 && (document.referrer.indexOf('/login.html') === -1 || !localStorage.getItem('hasVisitedIndex')))) {
+        // Redirect the user to the landing page
+            window.location.replace('/index.html');
+        } else {
+            // Set the "hasVisitedIndex" flag to true if the user is on the landing page
+            if (currentPath.endsWith('/index.html') && currentPath.endsWith('/login.html')) {
+                localStorage.setItem('hasVisitedIndex', true);
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <div class="bg">
+        <div class="form-container">
+
+            <div class="navbtnsignup navbtn">
+                <a href="#"><button class="active">Signup</button></a>
+                <a href="login.html"><button>Login</button></a>
+            </div>
+
+            <form class="signup-form" action="#" method="POST">
+                <label>Name</label>
+                <div class="name">
+                    <input type="text" placeholder="First" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                
+                <div class="gender">
+                    <label for="gender">Baranggay:</label>
+                        <select id="gender" name="gender">
+                            <option value="">Select---</option>
+                            <option value="bagumbayan">Bagumbayan</option>
+                            <option value="balubad">Balubad</option>
+                            <option value="bambang">Bambang</option>
+                            <option value="matungao">Matungao</option>
+                            <option value="maysantol">Maysantol</option>
+                            <option value="perez">Perez</option>
+                            <option value="pititan">Pititan</option>
+                            <option value="san Francisco">San Francisco</option>
+                            <option value="san Jose (Pob.)">San Jose (Pob.)</option>
+                            <option value="san Nicolas">San Nicolas</option>
+                            <option value="santa Ana">Santa Ana</option>
+                            <option value="santa Ines">Santa Ines</option>
+                            <option value="taliptip">Taliptip</option>
+                            <option value="tibig">Tibig</option>
+                        </select>
+                </div>
+
+                <span class="Phone-container Email_Address-container">
+                    <span class="Phone_EAddress">
+                        <label>Phone</label>
+                        <input type="tel" placeholder="Phone Number" required>
+                    </span>
+
+                    <span class="Phone_EAddress">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="Email Address" required>
+                    </span>
+                </span>
+
+                <span class="Address-container Password-container Confirm_Password-container">
+                    <span>
+                        <label>
+                            <label>Address </label><label class="grey">(House No./Street/Baranggay/City/Province)</label>
+                        </label>
+                        <input type="text" placeholder="Address" required>
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" required>
+                        <label>Confirm Password</label>
+                        <input type="password" placeholder="Confirm Password" required>
+                    </span>
+                </span>
+
+                <div class="submit-container">
+                    <button class="submitbtn" type="submit">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        
+    </script>
+</body>
+</html>

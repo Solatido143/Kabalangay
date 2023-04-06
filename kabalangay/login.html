@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\form1.css">
+    <title>Kabalangay | Log In</title>
+    <!-- <script>
+        // Get the current page path
+        const currentPath = window.location.pathname;
+        
+        // Check if the user is trying to access the login or sign-up page directly
+        if ((currentPath.endsWith('/login.html') || currentPath.endsWith('/signup1.html')) && (document.referrer.indexOf('/index.html') === -1 && (document.referrer.indexOf('/signup1.html') === -1 || !localStorage.getItem('hasVisitedIndex')))) {
+        // Redirect the user to the landing page
+            window.location.replace('/index.html');
+        } else {
+          // Set the "hasVisitedIndex" flag to true if the user is on the landing page
+            if (currentPath.endsWith('/index.html') && currentPath.endsWith('/signup1.html')) {
+            localStorage.setItem('hasVisitedIndex', true);
+            }
+        }
+    </script> -->
+</head>
+<body>
+    <div class="bg">
+        <div class="login-form-container">
+            <div class="navbtnlogin navbtn">
+                <a href="signup1.html"><button>Signup</button></a>
+                <a href="#"><button class="active">Login</button></a>
+            </div>
+            <form class="login-form" action="#" method="POST">
+                <span style="display: flex; flex-direction: column; justify-content: center; ">
+                    <span class="EmPa-input" style="display: flex; flex-direction: column; justify-content: center;">
+                        <label>Email</label>
+                        <input type="email" placeholder="Address" required>
+                        <label>Password</label>
+                        <input type="password" placeholder="Password" required>
+                        <div class="navlog">
+                            <a href="#">Forgot password?</a>
+                            <a href="#">Register Now</a>
+                        </div>
+                    </span>
+                    <div class="submit-container">
+                        <button class="submitbtn" type="submit">Log In</button>
+                    </div>
+                </span>
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
