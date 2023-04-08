@@ -5,8 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baranggay Clearance</title>
+    <style>
+        header div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        header img {
+            position: absolute;
+            left: 0px;
+        }
+        .content {
+            position: relative;
+            height: 60vh;
+            padding: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .background-image {
+            position: absolute;
+            top: 3%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            width: auto;
+            height: 100%;
+            opacity: 0.2;
+        }
+        .text {
+            position: relative;
+            z-index: 1;
+        }
+        .text p{
+            text-align: justify;
+            text-indent: 2em;
+            margin: 20px;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <div>
+            <img class="taliptip_seal" src="css\Taliptip_Official_Seal.svg.png" alt="taliptip_seal" width="150">
+            <div>
+                <p>REPUBLIKA NG PILIPINAS<br>LALAWIGAN NG BULAKAN<br>BAYAN NG BULAKAN</p>
+                <h3 style="margin-bottom: 10px;">PAMAHALAANG BARANGAY NG TALIPTIP</h3>
+                <h3 style="margin-top: 10px;">TANGGAPAN NG PUNONG BARANGAY</h3>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="content">
+        <img class="background-image" src="css/Taliptip_Official_Seal.svg.png" alt="watermark">
+        <div class="text">
+            <h1>BARANGAY CLEARANCE</h1>
+            <p>
+                Alinsunod sa itinatadhana ng Artikulo Blg.4 Seksyon 152 ng bagong Batas ng Pamahalaang Lokal ng Taong 1991(R.A.7160) pinagpasiyahan ng 
+                Pamahalaang Barangay ng Taliptip,and pagkalooban ng pahintulot si <u contentEditable="true">Rogelio M. Mangahas</u> ng 
+                <u contentEditable="true">Dulo Taliptip Bulakan</u> para sa paghahanapbuhay na <u contentEditable="true">Mangingisda</u> sa karagatang 
+                nasasakupan ng Barangay Taliptip Bulakan, Bulacan.
+            </p>
+            <p>
+                Pasubali sa paglilinaw na ito ang pag-iingat sa bisinidad malapit sa pinaghihigpitan ng hangganan ng SMAI, San Miguel Aerocity Inc.
+            </p>
+            <p>
+                Ibinigay and pahintulot ayon sa kahilingan ni <u contentEditable="true">G. Mangahas</u> na may bias hanggang Disyembre 31, <u contentEditable="true">&nbsp&nbsp&nbsp&nbsp</u>
+            </p>
+            <p>
+                Ipinagkaloob ngayong ika _____ ng ____________________________________ dito sa tanggapan ng Punong Barangay, Taliptip, Bulakan, Bulacan.
+            </p>
+        </div>
+        <div style="position: absolute;bottom: 50px; right: 50px;">
+            <h4 style="margin:0">Igg. MICHAEL M. RAMOS</h4>
+            Punong Barangay
+        </div>
+    </div>
 </body>
 </html>
